@@ -15,9 +15,9 @@ async def spam(ctx):
     a = ctx.message.content
     x = a.split(" ")
     del x[0]
-    b = int(x[1], base=10)
+    b = int(x[2], base=10)
     for i in range(1,b):
-        print(x[0])
+        await client.say(x[1])
 
 
 
