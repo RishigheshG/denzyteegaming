@@ -6,9 +6,9 @@ TOKEN = ''
 
 client = commands.Bot(command_prefix = "d? " or "D? ")
 
-@client.command()
+@client.command(pass_context=True)
 async def hi():
-    await client.say('Hello shanky')
+    await client.say('Hello shanky <@%s>',client.message.author)
 
 
 
