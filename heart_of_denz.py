@@ -10,6 +10,15 @@ client = commands.Bot(command_prefix = "d? ")
 async def hi(ctx):
     await client.say('Hello <@%s>' % (ctx.message.author.id))
 
+@client.command(pass_context=True)
+async def spam(ctx):
+    a = ctx.message.content
+    x = a.split(" ")
+    del x[0]
+    b = int(x[1], base=10)
+    for i in range(1,b):
+        print(x[0])
+
 
 
 
