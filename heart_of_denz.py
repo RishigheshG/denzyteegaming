@@ -8,7 +8,7 @@ client = commands.Bot(command_prefix = "d? " or "D? ")
 
 @client.command(pass_context=True)
 async def hi(ctx):
-    await client.say('Hello <@%s>', % (ctx.message.author.id))
+    await client.say('Hello <@%s>' % (ctx.message.author.id))
 
 
 
