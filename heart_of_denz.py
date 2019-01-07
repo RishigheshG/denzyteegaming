@@ -4,7 +4,7 @@ import os
 
 TOKEN = ''
 
-client = commands.Bot(command_prefix = "d? " or "D? ")
+client = commands.Bot(command_prefix = "d? " and "D? ")
 
 @client.command(pass_context=True)
 async def hi(ctx):
