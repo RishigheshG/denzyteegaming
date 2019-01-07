@@ -7,7 +7,7 @@ client = commands.Bot(command_prefix = "d?")
 
 @client.command()
 async def hi():
-    await client.say('Hello :3',client.message.author)
+    await client.say('Hello :3')
 
 
 
