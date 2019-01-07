@@ -4,7 +4,7 @@ import os
 
 TOKEN = ''
 
-client = commands.Bot(command_prefix = "d?")
+client = commands.Bot(command_prefix = "d? " or "D? ")
 
 @client.command()
 async def hi():
