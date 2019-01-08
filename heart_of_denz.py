@@ -20,7 +20,7 @@ async def coinflip(ctx):
 @client.command(pass_context=True)
 async def magicball(ctx):
     choices = ["Most probably", "It is Imminent", "Withiut a Doubt", "Definitely", "It is possible", "Maybe" ,"Mostly", "Impossible", "No way!" , "Oh Hell NO!"]
-    rancom = randome.choice(choices)
+    rancom = random.choice(choices)
     await client.say(rancom)
 
 @client.command(pass_context=True)
