@@ -20,6 +20,11 @@ async def spam(ctx):
         for i in range(0,b):
             await client.say(x[1])
 
+@client.command(pass_context=True)
+async def goal(ctx);
+    await client.say('WE HAVE 303 Minutes of watchtime, 20 Subscribers, 332 Views and 2 videos! <@%s>' % (ctx.message.author.id)
+    
+
 
 
 
