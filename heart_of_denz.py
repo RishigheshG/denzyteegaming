@@ -15,7 +15,7 @@ async def commands(ctx):
 async def coinflip(ctx):
     choices = ["Heads", "Tails"]
     rancoin = random.choice(choices)
-    await client.change_presence{activity=discord.Game{name="Under Development"}}
+    await ctx.send(rancoin)
 
 @client.command(pass_context=True)
 async def spam(ctx):
