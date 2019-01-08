@@ -8,7 +8,7 @@ client = commands.Bot(command_prefix = "d? ")
 
 @client.command(pass_context=True)
 async def hi(ctx):
-    await client.say('Hello <@%s>' % (ctx.message.author.id))
+    await client.say('Yo Boi <@%s>' % (ctx.message.author.id))
 
 @client.command(pass_context=True)
 async def spam(ctx):
