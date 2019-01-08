@@ -18,6 +18,10 @@ async def coinflip(ctx):
     await client.say(rancoin)
 
 @client.command(pass_context=True)
+async def goodnight(ctx):
+    await client.say("***Yay! At last you leave us alone!!***")
+    
+@client.command(pass_context=True)
 async def magicball(ctx):
     choices = ["Most probably", "It is Imminent", "Withiut a Doubt", "Definitely", "It is possible", "Maybe" ,"Mostly", "Impossible", "No way!" , "Oh Hell NO!"]
     rancom = random.choice(choices)
