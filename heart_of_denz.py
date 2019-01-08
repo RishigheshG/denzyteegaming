@@ -18,6 +18,12 @@ async def coinflip(ctx):
     await client.say(rancoin)
 
 @client.command(pass_context=True)
+async def 8ball(ctx):
+    choices = ["Most probably", "It is Imminent", "Withiut a Doubt", "Definitely", "It is possible", "Maybe" ,"Mostly", "Impossible", "No way!" , "Oh Hell NO!"]
+    rancom = randome.choice(choices)
+    await client.say(rancom)
+
+@client.command(pass_context=True)
 async def spam(ctx):
     a = ctx.message.content
     x = a.split(" ")
@@ -29,7 +35,7 @@ async def spam(ctx):
 
 @client.command(pass_context=True)
 async def goal(ctx):
-    await client.say('WE HAVE 303 Minutes of watchtime, 20 Subscribers, 332 Views and 2 videos! <@%s>' % (ctx.message.author.id))
+    await client.say('WE HAVE 357 Minutes of watchtime, 20 Subscribers, 435 Views and 3 videos! <@%s>' % (ctx.message.author.id))
 
 
 
