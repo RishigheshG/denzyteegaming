@@ -1,4 +1,5 @@
 import discord
+import random
 from discord.ext import commands
 import os
 
@@ -10,6 +11,11 @@ client = commands.Bot(command_prefix = "d!")
 async def commands(ctx):
     await client.say('```This command shows the help dialogue box! \n The prefix is d! \n ----- The available commands are 1)goal \n ----- This shows how many minutes are left to reach the goal \n ----- 2)hi \n ----- Its simple! it says hi! \n ----- 3)spam \n ----- This command lets u spam text till a limit of 20! syntax: d!spam <text> <no. of times>```')
 
+@client.command(pass_context=True)
+async def coinflip(ctx):
+    choices = ["Heads", "Tails"]
+    rancoin = random.choice(choices)
+    await client.change_presence{activity=discord.Game{name="Under Development"}}
 
 @client.command(pass_context=True)
 async def spam(ctx):
