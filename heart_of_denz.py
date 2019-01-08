@@ -15,7 +15,7 @@ async def commands(ctx):
 async def coinflip(ctx):
     choices = ["Heads", "Tails"]
     rancoin = random.choice(choices)
-    await ctx.send(rancoin)
+    await client.say(rancoin)
 
 @client.command(pass_context=True)
 async def spam(ctx):
