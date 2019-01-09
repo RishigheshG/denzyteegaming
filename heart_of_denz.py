@@ -39,7 +39,7 @@ async def spam(ctx):
 
 @client.command(pass_context=True)
 async def goal(ctx):
-    await client.say('WE HAVE 357 Minutes of watchtime, 20 Subscribers, 435 Views and 3 videos! <@%s>' % (ctx.message.author.id))
+    await client.say('WE HAVE 391 Minutes of watchtime, 20 Subscribers, 463 Views and 3 videos! <@%s>' % (ctx.message.author.id))
 
 
 
