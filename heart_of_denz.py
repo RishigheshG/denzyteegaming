@@ -7,9 +7,13 @@ TOKEN = ''
 
 client = commands.Bot(command_prefix = "d!")
 
+@client.event
+async def on_ready():
+    await client.change_presence(game=discord.Game(name='Being a good bot'))
+
 @client.command(pass_context=True)
 async def commands(ctx):
-    await client.say('```This command shows the help dialogue box! \n The prefix is d! \n ----- \n The available commands are \n ----- \n 1)goal \n -- \n This shows how many minutes are left to reach the goal \n ----- \n 2)hi \n -- \n Its simple! it says hi! \n ----- \n 3)spam \n -- \n This command lets u spam text till a limit of 20! syntax: d!spam <text> <no. of times>```')
+    await client.say('```This command shows the help dialogue box! \n The prefix is d! \n ----- \n The available commands are \n ----- \n 1)goal \n -- \n This shows how many minutes are left to reach the goal \n ----- \n 2)goodnight \n -- \n Well, you should try using the command to know what it does, should\'nt you? \n ----- \n 3)spam \n -- \n This command lets u spam text till a limit of 20! syntax: d!spam <text> <no. of times> \n ----- \n 4)coinflip \n -- \n Flips a coin for you \n ----- \n 5)magicball \n -- \n Ask a question and it tells you the chances of that happening!```')
 
 @client.command(pass_context=True)
 async def coinflip(ctx):
@@ -40,6 +44,10 @@ async def spam(ctx):
 @client.command(pass_context=True)
 async def goal(ctx):
     await client.say('WE HAVE 391 Minutes of watchtime, 20 Subscribers, 463 Views and 3 videos! <@%s>' % (ctx.message.author.id))
+
+@client.command(pass_context=True)
+async def Denzytee(ctx):
+    await client.say('https://www.youtube.com/channel/UCGZPDIh0EIn4Rn8jdf6gSDA')
 
 
 
