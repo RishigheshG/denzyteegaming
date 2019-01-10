@@ -46,8 +46,8 @@ async def goal(ctx):
     await client.say('Our goal is to get 400 hours of watchtime and 1000 subsscribers! \n As of now, We Have 407 Minutes of watchtime, 20 Subscribers, 476 Views and 3 videos! <@%s>' % (ctx.message.author.id))
 
 @client.command(pass_context=True)
-async def Denzytee(ctx):
-    await client.say('https://www.youtube.com/channel/UCGZPDIh0EIn4Rn8jdf6gSDA')
+async def denzytee(ctx):
+    await client.say('Youtube: https://www.youtube.com/channel/UCGZPDIh0EIn4Rn8jdf6gSDA')
 
 
 
