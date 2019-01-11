@@ -36,14 +36,14 @@ async def spam(ctx):
     a = ctx.message.content
     x = a.split(" ")
     del x[0]
-    b = int(x[2]-x[1], base=10)
+    b = int(x[1], base=10)
     if(b<20):
         for i in range(0,b):
-            await client.say(x[1]-x[0])
+            await client.say(x[0])
 
 @client.command(pass_context=True)
 async def goal(ctx):
-    await client.say('Our goal is to get 400 hours of watchtime and 1000 subsscribers! \n As of now, We Have 407 Minutes of watchtime, 20 Subscribers, 476 Views and 3 videos! <@%s>' % (ctx.message.author.id))
+    await client.say('Our goal is to get 400 hours of watchtime and 1000 subsscribers! \n As of now, We Have 432 Minutes of watchtime, 20 Subscribers, 505 Views and 3 videos! <@%s>' % (ctx.message.author.id))
 
 @client.command(pass_context=True)
 async def denzytee(ctx):
