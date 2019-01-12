@@ -40,14 +40,23 @@ async def spam(ctx):
     if(b<20):
         for i in range(0,b):
             await client.say(x[0])
+        
+@client.command(pass_context=True)
+async def clear(ctx, amount=100):
+    channel = ctx.message.channel
+    messages = []
+    async for message in client.logs_from(channel, limit=int(amount) + 1):
+        messages.append(message)
+    await client.delete_messages(messages)
+    await client.say('Messages deleted.')
 
 @client.command(pass_context=True)
 async def goal(ctx):
-    await client.say('Our goal is to get 4000 hours of watchtime and 1000 subsscribers! \n As of now, We Have 432 Minutes of watchtime, 20 Subscribers, 505 Views and 2 videos! <@%s>' % (ctx.message.author.id))
+    await client.say('Our goal is to get 4000 hours of watchtime and 1000 subsscribers! \n As of now, We Have 445 Minutes of watchtime, 20 Subscribers, 518 Views and 2 videos! <@%s>' % (ctx.message.author.id))
 
 @client.command(pass_context=True)
 async def denzytee(ctx):
-    await client.say('Youtube: https://www.youtube.com/channel/UCGZPDIh0EIn4Rn8jdf6gSDA')
+    await client.say('Youtube: https://www.youtube.com/channel/UCGZPDIh0EIn4Rn8jdf6gSDA \n Instagram: (https://www.instagram.com/denzytee_gaming/?hl=en) \n Twitter: (https://twitter.com/DenzyteeG) \n Twitch: (https://www.twitch.tv/denzytee)')
 
 
 
