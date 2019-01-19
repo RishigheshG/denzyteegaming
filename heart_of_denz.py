@@ -9,7 +9,7 @@ client = commands.Bot(command_prefix = "d!")
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=discord.Game(name='Give ze pizza!'))
+    await client.change_presence(game=discord.Game(name='with your life!'))
 
 @client.command(pass_context=True)
 async def commands(ctx):
