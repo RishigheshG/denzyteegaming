@@ -13,7 +13,7 @@ async def on_ready():
 
 @client.command(pass_context=True)
 async def commands(ctx):
-    await client.say('```This command shows the help dialogue box! \n The prefix is d! \n ----- \n The available commands are \n ----- \n 1)goal \n -- \n This shows how many minutes are left to reach the goal \n ----- \n 2)goodnight \n -- \n Well, you should try using the command to know what it does, should\'nt you? \n ----- \n 3)spam \n -- \n This command lets u spam text till a limit of 20! syntax: d!spam <text> <no. of times> \n ----- \n 4)coinflip \n -- \n Flips a coin for you \n ----- \n 5)magicball \n -- \n Ask a question and it tells you the chances of that happening!```')
+    await client.say('```This command shows the help dialogue box! \n The prefix is d! \n ----- \n The available commands are \n ----- \n 1)goal \n -- \n This shows how many minutes are left to reach the goal \n ----- \n 2)goodnight \n -- \n Well, you should try using the command to know what it does, should\'nt you? \n ----- \n 3)spam \n -- \n This command lets u spam text till a limit of 20! syntax: d!spam <text> <no. of times> \n ----- \n 4)coinflip \n -- \n Flips a coin for you \n ----- \n 5)magicball \n -- \n Ask a question and it tells you the chances of that happening! \n ----- \n 6)clear \n -- \n This commands clears the last 100 messages by default. Unless you put the number of messages (should be less than 100) next to the command \n ----- \n 7)Denzytee \n -- \n This will give you the links to our youtube , twitter, twitch and instagram ```')
 
 @client.command(pass_context=True)
 async def coinflip(ctx):
