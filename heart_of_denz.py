@@ -37,7 +37,7 @@ async def spam(ctx):
     x = a.split(" ")
     del x[0]
     b = int(x[1], base=10)
-    if(b<20):
+    if(b<101):
         for i in range(0,b):
             await client.say(x[0])
         
