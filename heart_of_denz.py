@@ -52,7 +52,7 @@ async def clear(ctx, amount=100):
 
 @client.command(pass_context=True)
 async def goal(ctx):
-    await client.say('Our goal is to get 4000 hours of watchtime and 1000 subsscribers! \n As of now, We Have 445 Minutes of watchtime, 22 Subscribers, 518 Views and 2 videos! <@%s>' % (ctx.message.author.id))
+    await client.say('Our goal is to get 4000 hours of watchtime and 1000 subsscribers! \n As of now, We Have 524 Minutes of watchtime, 22 Subscribers, 616 Views and 2 videos! <@%s>' % (ctx.message.author.id))
 
 @client.command(pass_context=True)
 async def denzytee(ctx):
