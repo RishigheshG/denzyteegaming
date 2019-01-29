@@ -52,13 +52,15 @@ async def clear(ctx, amount=100):
 
 @client.command(pass_context=True)
 async def goal(ctx):
-    await client.say('Our goal is to get 4000 hours of watchtime and 1000 subsscribers! \n As of now, We Have 1681 Minutes of watchtime, 22 Subscribers, 840 Views and 2 videos! <@%s>' % (ctx.message.author.id))
+    await client.say('Our goal is to get 4000 hours of watchtime and 1000 subsscribers! \n As of now, We Have 1681 Minutes of watchtime, 22 Subscribers, 840 Views and 5 videos! <@%s>' % (ctx.message.author.id))
 
 @client.command(pass_context=True)
 async def denzytee(ctx):
     await client.say('Youtube: https://www.youtube.com/channel/UCGZPDIh0EIn4Rn8jdf6gSDA \n Instagram: (https://www.instagram.com/denzytee_gaming/?hl=en) \n Twitter: (https://twitter.com/DenzyteeG) \n Twitch: (https://www.twitch.tv/denzytee)')
 
-
+@client.command(pass_context=True)
+async def ping(ctx):
+    await client.say('IM NOT JOBLESS , BITCH!')
 
 
 
