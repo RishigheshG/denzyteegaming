@@ -65,8 +65,9 @@ async def ping(ctx):
 @client.command(pass_context=True)
 async def csc(ctx):
     x=random(5)
-    await.sleep(x)
-    client.say('d!na')
+    await asyncio.sleep(x)
+    await client.say('d!na')
+
 
 
 client.run(os.getenv('TOKEN'))
