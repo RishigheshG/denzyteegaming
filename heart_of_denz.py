@@ -68,6 +68,11 @@ async def csc(ctx):
     await asyncio.sleep(x)
     await client.say('d!na')
 
+@client.command(pass_context=True)
+async def na(ctx):
+    choices = ["!play https://www.youtube.com/watch?v=U06jlgpMtQs" , "!play https://www.youtube.com/watch?v=kRPGPAnPNa8" , "!play https://www.youtube.com/watch?v=HtMF973tXIY" , "!play https://www.youtube.com/watch?v=UctriMuXYS0" , "!play https://www.youtube.com/watch?v=29FFHC2D12Q"]
+    rancoin = random.choice(choices)
+    await client.say(rancoin)
 
 
 client.run(os.getenv('TOKEN'))
