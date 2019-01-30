@@ -60,8 +60,13 @@ async def denzytee(ctx):
 
 @client.command(pass_context=True)
 async def ping(ctx):
-    await client.say('IM NOT JOBLESS , BITCH!')
+    await client.say('IM NOT JOBLESS ,U FOOL!')
 
+@client.command(pass_context=True)
+async def csc(ctx):
+    x=random(5)
+    await.sleep(x)
+    client.say('d!na')
 
 
 client.run(os.getenv('TOKEN'))
