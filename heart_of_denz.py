@@ -52,7 +52,7 @@ async def clear(ctx, amount=100):
 
 @client.command(pass_context=True)
 async def goal(ctx):
-    await client.say('Our goal is to get 4000 hours of watchtime and 1000 subsscribers! \n As of now, We Have 1681 Minutes of watchtime, 22 Subscribers, 840 Views and 5 videos! <@%s>' % (ctx.message.author.id))
+    await client.say('Our goal is to get 4000 hours of watchtime and 1000 subsscribers! \n As of now, We Have 1741 Minutes of watchtime, 26 Subscribers, 955 Views and 6 videos! <@%s>' % (ctx.message.author.id))
 
 @client.command(pass_context=True)
 async def denzytee(ctx):
@@ -71,6 +71,12 @@ async def csc(ctx):
 @client.command(pass_context=True)
 async def na(ctx):
     choices = ["!play https://www.youtube.com/watch?v=U06jlgpMtQs" , "!play https://www.youtube.com/watch?v=kRPGPAnPNa8" , "!play https://www.youtube.com/watch?v=HtMF973tXIY" , "!play https://www.youtube.com/watch?v=UctriMuXYS0" , "!play https://www.youtube.com/watch?v=29FFHC2D12Q"]
+    rancoin = random.choice(choices)
+    await client.say(rancoin)
+
+@client.command(pass_context=True)
+async def denzplay(ctx):
+    choices = ["https://www.youtube.com/watch?v=bALkuRXW144&t" , "https://www.youtube.com/watch?v=2X6sPcWEvHI&t" , "https://www.youtube.com/watch?v=ALd5myhEYIY" , "https://www.youtube.com/watch?v=ThVUcoMOs-E" , "https://www.youtube.com/watch?v=09x0q9kzxjo&t" , "https://www.youtube.com/watch?v=02fr15TZ-M8"]
     rancoin = random.choice(choices)
     await client.say(rancoin)
 
