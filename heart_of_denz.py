@@ -60,7 +60,7 @@ async def denzytee(ctx):
 
 @client.command(pass_context=True)
 async def ping(ctx):
-    await client.say('IM NOT JOBLESS ,U FOOL!')
+    await client.say('IM NOT JOBLESS LIKE U Dumbass !')
 
 @client.command(pass_context=True)
 async def csc(ctx):
