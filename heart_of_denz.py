@@ -81,7 +81,7 @@ async def denzplay(ctx):
     await client.say(rancoin)
 
 @client.command(pass_context=True)
-async def daltabday(ctx):
+async def deltabday(ctx):
     await client.say('https://drive.google.com/file/d/1B0n6_rOoxrBFS4VzQYcbWW7ZrVwoDFEy/view?usp=sharing')
 
 
