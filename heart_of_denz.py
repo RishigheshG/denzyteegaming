@@ -80,6 +80,10 @@ async def denzplay(ctx):
     rancoin = random.choice(choices)
     await client.say(rancoin)
 
+@client.command(pass_context=True)
+async def daltabday(ctx):
+    await client.say('https://drive.google.com/file/d/1B0n6_rOoxrBFS4VzQYcbWW7ZrVwoDFEy/view?usp=sharing')
+
 
 client.run(os.getenv('TOKEN'))
 
