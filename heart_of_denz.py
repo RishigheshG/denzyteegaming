@@ -84,6 +84,12 @@ async def denzplay(ctx):
 async def cringe(ctx):
     await client.say('https://drive.google.com/file/d/1B0n6_rOoxrBFS4VzQYcbWW7ZrVwoDFEy/view?usp=sharing')
 
+@client.command(pass_context=True)
+async def goodmorning(ctx):
+    await client.say('***I see you have come back. This servers gonna be boring now :(*** <@%s>' % (ctx.message.author.id))
+
+    
+
 
 client.run(os.getenv('TOKEN'))
 
