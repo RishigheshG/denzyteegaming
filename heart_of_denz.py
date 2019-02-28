@@ -23,11 +23,11 @@ async def coinflip(ctx):
 
 @client.command(pass_context=True)
 async def goodnight(ctx):
-    await client.say("***Yay! At last you leave us alone!!*** <@%s>" % (ctx.message.author.id))
+    await client.say("***GOOD NIGHT! SEE YOU TOMORROW! THANKS FOR SUPPORTING US :D*** <@%s>" % (ctx.message.author.id))
 
 @client.command(pass_context=True)
 async def magicball(ctx):
-    choices = ["Most probably", "It is Imminent", "Withiut a Doubt", "Definitely", "It is possible", "Maybe" ,"Mostly", "Impossible", "No way!" , "Oh Hell NO!"]
+    choices = ["Most probably", "It is Imminent", "Without a Doubt", "Definitely", "It is possible", "Maybe" ,"Mostly", "Impossible", "No way!" , "Oh Hell NO!"]
     rancom = random.choice(choices)
     await client.say(rancom)
 
@@ -86,7 +86,7 @@ async def cringe(ctx):
 
 @client.command(pass_context=True)
 async def goodmorning(ctx):
-    await client.say('***I see you have come back. This servers gonna be boring now :(*** <@%s>' % (ctx.message.author.id))
+    await client.say('***ITS GOOD TO HAVE YOU BACK, GOOD MORNING :D*** <@%s>' % (ctx.message.author.id))
 
 client.run(os.getenv('TOKEN'))
 
