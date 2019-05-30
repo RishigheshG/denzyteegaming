@@ -2,10 +2,25 @@ import discord
 import random
 from discord.ext import commands
 import os
+import asyncio
+import itertools
+import cycle
+
 
 TOKEN = ''
 
 client = commands.Bot(command_prefix = "d!")
+
+status = ['hello', 'hi', 'hey']
+
+async def change_status():
+    await client.wait_until_ready()
+    msgs = cycle(status)
+
+    while not client.is_closed:
+        current_status = next(msgs)
+        await client.change_presence(game=discord.Game(name=current_status))
+        await asyncio.sleep(5)
 
 @client.event
 async def on_ready():
@@ -88,6 +103,7 @@ async def cringe(ctx):
 async def goodmorning(ctx):
     await client.say('***ITS GOOD TO HAVE YOU BACK, GOOD MORNING :D*** <@%s>' % (ctx.message.author.id))
 
+client.loop.create_task(change_status())
 client.run(os.getenv('TOKEN'))
 
 
