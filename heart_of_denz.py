@@ -13,7 +13,7 @@ async def on_ready():
 
 @client.command(pass_context=True)
 async def commands(ctx):
-    await client.say('```This command shows the help dialogue box! \n The prefix is d! \n ----- \n The available commands are \n ----- \n 1)goal \n -- \n This shows how many minutes are left to reach the goal \n ----- \n 2)goodnight \n -- \n Well, you should try using the command to know what it does, should\'nt you? \n ----- \n 3)spam \n -- \n This command lets u spam text till a limit of 20! syntax: d!spam <text> <no. of times> \n ----- \n 4)coinflip \n -- \n Flips a coin for you \n ----- \n 5)magicball \n -- \n Ask a question and it tells you the chances of that happening! \n ----- \n 6)clear \n -- \n This commands clears the last 100 messages by default. Unless you put the number of messages (should be less than 100) next to the command \n ----- \n 7)Denzytee \n -- \n This will give you the links to our youtube , twitter, twitch and instagram ```')
+    await client.say('```This command shows the help dialogue box! \n The prefix is d! \n ----- \n The available commands are \n ----- \n 1)goal \n -- \n This shows how many minutes are left to reach the goal \n ----- \n 2)goodnight \n -- \n Try it \n ----- \n 3)spam \n -- \n This command lets u spam text till a limit of 20! syntax: d!spam <text> <no. of times> \n ----- \n 4)coinflip \n -- \n Flips a coin for you \n ----- \n 5)magicball \n -- \n Ask a question and it tells you the chances of that happening! \n ----- \n 6)clear \n -- \n This commands clears the last 100 messages by default. Unless you put the number of messages (should be less than 100) next to the command \n ----- \n 7)Denzytee \n -- \n This will give you the links to our youtube , twitter, twitch and instagram \n ----- \n 8)ping \n -- \n Its for testing the if the bot is awake \n ----- \n 9)denzplay \n -- \n This will give the one of our videos \n ----- \n 10)cring \n -- \n Try it yourself ;) \n ----- \n 11)goodmorning \n -- \n Try it ```')
 
 @client.command(pass_context=True)
 async def coinflip(ctx):
@@ -82,7 +82,7 @@ async def denzplay(ctx):
 
 @client.command(pass_context=True)
 async def cringe(ctx):
-    await client.say('https://drive.google.com/file/d/1B0n6_rOoxrBFS4VzQYcbWW7ZrVwoDFEy/view?usp=sharing')
+    await client.say('look at the mirror -_-')
 
 @client.command(pass_context=True)
 async def goodmorning(ctx):
